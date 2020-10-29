@@ -1,0 +1,76 @@
+{
+	"name":"Aoki",
+	"version":"0.1",
+	"manifest_version":2,
+	"icons":{
+		"128":"128.png",
+		"48":"48.png",
+		"16":"16.png"
+	},
+	"browser_action":{
+		"default_icon":"logo.png",
+		"default_popup":"popup.html"	
+	},
+	"background":{
+		"scripts":["background.js"]
+	},
+	"content_scripts" :[
+		{
+			"matches":[
+				"<all_urls>"
+			],
+			"js":["content.js"]
+		}
+	],
+	"commands": {
+		"toggle-feature-foo": {
+		  "suggested_key": {
+			"default": "Ctrl+Shift+Y",
+			"mac": "Command+Shift+Y"
+		  },
+		  "description": "Toggle feature foo",
+		  "global": true
+		},
+		
+		"_execute_browser_action": {
+		  "suggested_key": {
+			"windows": "Ctrl+Shift+Y",
+			"mac": "Command+Shift+Y",
+			"chromeos": "Ctrl+Shift+U",
+			"linux": "Ctrl+Shift+J"
+		  }
+		},
+		"_execute_page_action": {
+		  "suggested_key": {
+			"default": "Ctrl+Shift+E",
+			"windows": "Alt+Shift+P",
+			"mac": "Alt+Shift+P"
+		  },
+		  "global": true
+		}
+	  },
+	/* "commands": {
+          "funcA": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+9"
+            },
+            "description": "Toggle feature foo",
+            "global": true
+		}
+	}, */
+	"permissions":[
+	"alarms",
+	"notifications",
+	"storage",
+	"file://*/*",
+	"tabs",
+	"contextMenus",
+ 	"http://*/*",
+	"https://*/*",
+	"<all_urls>",
+	"file://*/*",
+	"http://nowhere.16mb.com/*"
+	],
+	"content_security_policy": "script-src 'self' https://www.google.com https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js;object-src 'self'"
+}
+

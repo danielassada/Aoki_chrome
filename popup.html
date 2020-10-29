@@ -1,0 +1,167 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="alasql.min.js"></script>
+  <script src="xlsx.core.min.js"></script>
+  <!-- compiled files -->
+  <link rel="stylesheet" type="text/css" href="popup_css.css">
+
+</head>
+
+<body>
+  <div class="content">
+    <div id="search-bar">
+      <input type="text" name="text-input" id="text-input" autofocus="">
+      <!-- <div>5555</div> -->
+      <!-- <button id="xxxxx">Try it</button> -->
+
+    </div>
+
+    <hr>
+    <div class="hide" id="clock-container">
+      <div class="header">
+        <select id="hour">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+        </select>
+        <select id="minute">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+        </select>
+      </div>
+
+      <button id='alarm'>timer</button>
+      <button id='stop'>clear timer</button>
+      <button id='view'>view timer</button>
+      <button id='t1'>t1</button>
+    </div>
+    <div id="buttons" class="buttons-conteiner">
+      <button class="button-jap" id="jap">jisho</button>
+
+      <button class="button-you" id="you">youtube</button>
+
+      <button class="button-duck" id="duck">duck</button>
+
+      <button class="" id="her">Here</button>
+      
+      <button class="button-you" id="you_repeater">repeater</button>
+
+      <button class="button-sjs" id="sjs">Js</button>
+
+      <button class="button-fon" id="fon">font</button>
+
+      <button class="" id="video">video</button>
+
+      <button class="" id="dictionary">dictionary</button>
+
+      <button class="" id="clock">clock</button>
+
+      <button class="" id="save_url">save urls</button>
+
+      <button id="save">Save</button>
+      
+      <button id="exibir">Show</button>
+
+      <button id="antiBlock">anti-block</button>
+
+    </div>
+    <div id="btn2">
+      <button id="con">n</button>
+      <button id="h1">H1</button>
+      <button id="h2">H2</button>
+      <button id="limpar">Clear</button>
+      <button class="" id="higazer">a->あ</button>
+      <button class="" id="romazer">あ->a</button>
+      <button class="" id="excel">->Excel</button>
+      <button class="button-sfw" id="sfw">sfw</button>
+    </div>
+    <div id="result">
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

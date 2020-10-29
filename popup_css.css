@@ -1,0 +1,106 @@
+body{
+	min-width:500px;
+	min-height: 300px;
+	background-color: #000;
+    border: 3px solid #9ACD6A  ;
+    
+}
+*{
+	font-family:bitter;
+	src: url(<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">);
+}
+.header{
+    width: 100%
+    top:0;
+}
+button{
+	padding: 5px;
+	font-size:25px;
+	font-family:bitter;
+	border-radius: 7px;
+
+}
+.buttons-conteiner{
+    background-image:url("back.png");
+    width:500px;
+    min-height: 200px;
+
+}
+#text-input{
+	width: 98%;
+    height: 60px;
+    font-size: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba( 52, 67, 75, .2);
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    -webkit-transition: box-shadow .1s linear;
+    transition: box-shadow .1s linear;
+}
+.button-duck{
+	background-color: rgb(217, 255, 0);
+}
+
+.button-jap{
+	background-color: #5ACD6A;
+}
+
+.button-you{
+	background-color: #CD5A6A;
+}
+
+.button-sfw{
+	background-color: #666;
+}
+      
+.button-fon{
+	background-color: #fff;
+}
+.button-sjs{
+	background-color: #6A5ACD;
+}
+.bottom{
+	bottom: 10px;
+}
+
+hr {
+    background: #6A5ACD;
+    color: #6A5ACD;
+    border-width: 7px;
+    border-color: #6A5ACD;
+    border-left-color: #9A7ACD;
+}
+.row{
+    background-color: #fff;
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #6A5ACD;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#kunH{
+    display: ;
+}
+#onH{
+    display: ;
+}
+#clock-container{
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    width:65%;
+    height: 200px;
+    background-color: #000;
+    border: 3px solid #034;
+}
+#clock button{
+    margin-top: 50px;
+   
+}
+.hide{
+    display: none;
+}
